@@ -1,0 +1,161 @@
+User@DESKTOP-FOASM6G MINGW64 ~/IH-Labs
+$ cd lab-bash
+
+User@DESKTOP-FOASM6G MINGW64 ~/IH-Labs/lab-bash (master)
+$ echo 'Hello World'
+Hello World
+
+User@DESKTOP-FOASM6G MINGW64 ~/IH-Labs/lab-bash (master)
+$ mkdir new_dir
+
+User@DESKTOP-FOASM6G MINGW64 ~/IH-Labs/lab-bash (master)
+$ rm -r new_dir
+
+User@DESKTOP-FOASM6G MINGW64 ~/IH-Labs/lab-bash (master)
+$ cd lorem
+
+User@DESKTOP-FOASM6G MINGW64 ~/IH-Labs/lab-bash/lorem (master)
+$ cp sed.txt ~/IH-Labs/lab-bash/lorem-copy
+
+User@DESKTOP-FOASM6G MINGW64 ~/IH-Labs/lab-bash/lorem (master)
+$ cp at.txt ~/IH-Labs/lab-bash/lorem-copy ; cp lorem.txt ~/IH-Labs/lab-bash/lorem-copy
+
+User@DESKTOP-FOASM6G MINGW64 ~/IH-Labs/lab-bash/lorem (master)
+$ cat sed.txt
+Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium,
+totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
+Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit,
+sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.
+Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit,
+sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.
+Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam,
+nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur,
+vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?Homo homini lupus
+
+User@DESKTOP-FOASM6G MINGW64 ~/IH-Labs/lab-bash/lorem (master)
+$ cat at.txt ; cat lorem.txt
+At vero eos ET accusamus ET iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum
+deleniti atque corrupti quos dolores ET quas molestias excepturi sint occaecati cupiditate non
+provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum ET dolorum fuga.
+Et harum quidem rerum facilis est ET expedita distinctio.
+Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod
+maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus.
+Temporibus autem quibusdam ET aut officiis debitis aut rerum necessitatibus saepe eveniET
+ut ET voluptates repudiandae sint ET molestiae non recusandae.
+Itaque earum rerum hic tenETur a sapiente delectus, ut aut reiciendis voluptatibus maiores
+alias consequatur aut perferendis doloribus asperiores repellat
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+User@DESKTOP-FOASM6G MINGW64 ~/IH-Labs/lab-bash/lorem (master)
+$ cd ..
+
+User@DESKTOP-FOASM6G MINGW64 ~/IH-Labs/lab-bash (master)
+$ cd lorem-copy
+
+User@DESKTOP-FOASM6G MINGW64 ~/IH-Labs/lab-bash/lorem-copy (master)
+$ dir > print
+
+User@DESKTOP-FOASM6G MINGW64 ~/IH-Labs/lab-bash/lorem-copy (master)
+$ head -3 sed.txt
+Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium,
+totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
+Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit,
+
+User@DESKTOP-FOASM6G MINGW64 ~/IH-Labs/lab-bash/lorem-copy (master)
+$ headtail -3 sed.txt
+bash: headtail: command not found
+
+User@DESKTOP-FOASM6G MINGW64 ~/IH-Labs/lab-bash/lorem-copy (master)
+$ tail -3 sed.txt
+Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam,
+nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur,
+vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?Homo homini lupus
+
+User@DESKTOP-FOASM6G MINGW64 ~/IH-Labs/lab-bash/lorem-copy (master)
+$ tail -3 sed.txt
+Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam,
+nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur,
+vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?Homo homini lupus Homo homini lupus.
+
+User@DESKTOP-FOASM6G MINGW64 ~/IH-Labs/lab-bash/lorem-copy (master)
+$ cd ..
+
+User@DESKTOP-FOASM6G MINGW64 ~/IH-Labs/lab-bash (master)
+$ cd lorem
+
+User@DESKTOP-FOASM6G MINGW64 ~/IH-Labs/lab-bash/lorem (master)
+$ se -et -ET at.txt
+bash: se: command not found
+
+User@DESKTOP-FOASM6G MINGW64 ~/IH-Labs/lab-bash/lorem (master)
+$ sed -et -ET at.txt
+sed: unknown option -- T
+Usage: sed [OPTION]... {script-only-if-no-other-script} [input-file]...
+
+  -n, --quiet, --silent
+                 suppress automatic printing of pattern space
+      --debug
+                 annotate program execution
+  -e script, --expression=script
+                 add the script to the commands to be executed
+  -f script-file, --file=script-file
+                 add the contents of script-file to the commands to be executed
+  --follow-symlinks
+                 follow symlinks when processing in place
+  -i[SUFFIX], --in-place[=SUFFIX]
+                 edit files in place (makes backup if SUFFIX supplied)
+  -b, --binary
+                 open files in binary mode (CR+LFs are not processed specially)
+  -l N, --line-length=N
+                 specify the desired line-wrap length for the `l' command
+  --posix
+                 disable all GNU extensions.
+  -E, -r, --regexp-extended
+                 use extended regular expressions in the script
+                 (for portability use POSIX -E).
+  -s, --separate
+                 consider files as separate rather than as a single,
+                 continuous long stream.
+      --sandbox
+                 operate in sandbox mode (disable e/r/w commands).
+  -u, --unbuffered
+                 load minimal amounts of data from the input files and flush
+                 the output buffers more often
+  -z, --null-data
+                 separate lines by NUL characters
+      --help     display this help and exit
+      --version  output version information and exit
+
+If no -e, --expression, -f, or --file option is given, then the first
+non-option argument is taken as the sed script to interpret.  All
+remaining arguments are names of input files; if no input files are
+specified, then the standard input is read.
+
+GNU sed home page: <https://www.gnu.org/software/sed/>.
+General help using GNU software: <https://www.gnu.org/gethelp/>.
+
+User@DESKTOP-FOASM6G MINGW64 ~/IH-Labs/lab-bash/lorem (master)
+$ whoami
+User
+
+User@DESKTOP-FOASM6G MINGW64 ~/IH-Labs/lab-bash/lorem (master)
+$ pwd
+/c/Users/User/IH-Labs/lab-bash/lorem
+
+User@DESKTOP-FOASM6G MINGW64 ~/IH-Labs/lab-bash/lorem (master)
+$ ls
+at.txt  at.txte  lorem.txt  sed.txt
+
+User@DESKTOP-FOASM6G MINGW64 ~/IH-Labs/lab-bash/lorem (master)
+$ ls .txt
+ls: cannot access '.txt': No such file or directory
+
+User@DESKTOP-FOASM6G MINGW64 ~/IH-Labs/lab-bash/lorem (master)
+$ ls txt
+ls: cannot access 'txt': No such file or directory
+
+User@DESKTOP-FOASM6G MINGW64 ~/IH-Labs/lab-bash/lorem (master)
+$ ls files
+ls: cannot access 'files': No such file or directory
